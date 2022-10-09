@@ -108,7 +108,6 @@ class ChangeColorOfBox extends InheritedWidget {
   final height;
 
   final Widget child;
-
   static ChangeColorOfBox? of(BuildContext context) {
     return context.dependOnInheritedWidgetOfExactType<ChangeColorOfBox>();
   }
