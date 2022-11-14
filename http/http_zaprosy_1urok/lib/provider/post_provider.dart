@@ -15,7 +15,6 @@ class postProvider with ChangeNotifier {
       final response = await repo.getPosts();
       final data = jsonDecode(response.body) as List;
       posts = data.map((e) => PostModel.fromJSON(e)).toList();
-      log(posts.toString());
     } catch (e) {}
   }
 }
